@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.logo {
+    height: 70px;
+    width: 100px;
+    align-content: flex-start;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.menu {
+    align-items: end;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+main {
+    background-image: url("https://www.inmuebles24.com/noticias/wp-content/uploads/2019/12/vivienda-en-renta-profesional-1024x769.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+}
+
+#texto {
+    color: #0c0c0c;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+#video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    margin-top: 30px;
+}
+
+#video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #texto {
+        flex-basis: 50%;
+        margin-right: 30px;
+    }
+    #video {
+        flex-basis: 50%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #texto {
+        margin-right: 0;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    } 
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
